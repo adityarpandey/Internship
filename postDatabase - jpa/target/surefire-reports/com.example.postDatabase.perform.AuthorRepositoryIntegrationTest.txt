@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.postDatabase.perform.AuthorRepositoryIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.464 s -- in com.example.postDatabase.perform.AuthorRepositoryIntegrationTest

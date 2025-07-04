@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+Test set: com.example.postDatabase.perform.BookRepositoryIntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.118 s <<< FAILURE! -- in com.example.postDatabase.perform.BookRepositoryIntegrationTests
+com.example.postDatabase.perform.BookRepositoryIntegrationTests.testThatBookCanBeUpdated -- Time elapsed: 0.089 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: Book(idbs=978-1-2345-6789-0, name=UPDATED, author=Author(id=null, name=Abigail Rose, age=80))
+ but was: Book(idbs=978-1-2345-6789-0, name=UPDATED, author=Author(id=2, name=Abigail Rose, age=80))
+	at com.example.postDatabase.perform.BookRepositoryIntegrationTests.testThatBookCanBeUpdated(BookRepositoryIntegrationTests.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.postDatabase.perform.BookRepositoryIntegrationTests.testThatBookCanBeCreatedAndRecalled -- Time elapsed: 0.067 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: Book(idbs=978-1-2345-6789-0, name=The Shadow in the Attic, author=Author(id=null, name=Abigail Rose, age=80))
+ but was: Book(idbs=978-1-2345-6789-0, name=The Shadow in the Attic, author=Author(id=1, name=Abigail Rose, age=80))
+	at com.example.postDatabase.perform.BookRepositoryIntegrationTests.testThatBookCanBeCreatedAndRecalled(BookRepositoryIntegrationTests.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.postDatabase.perform.BookRepositoryIntegrationTests.testThatMultipleBooksCanBeCreatedAndRecalled -- Time elapsed: 0.057 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting actual:
+  [Book(idbs=978-1-2345-6789-0, name=The Shadow in the Attic, author=Author(id=1, name=Abigail Rose, age=80)),
+    Book(idbs=978-1-2345-6789-1, name=Beyond the Horizon, author=Author(id=2, name=Abigail Rose, age=80)),
+    Book(idbs=978-1-2345-6789-2, name=The Last Ember, author=Author(id=3, name=Abigail Rose, age=80))]
+to contain exactly (and in same order):
+  [Book(idbs=978-1-2345-6789-0, name=The Shadow in the Attic, author=Author(id=null, name=Abigail Rose, age=80)),
+    Book(idbs=978-1-2345-6789-1, name=Beyond the Horizon, author=Author(id=null, name=Abigail Rose, age=80)),
+    Book(idbs=978-1-2345-6789-2, name=The Last Ember, author=Author(id=null, name=Abigail Rose, age=80))]
+but some elements were not found:
+  [Book(idbs=978-1-2345-6789-0, name=The Shadow in the Attic, author=Author(id=null, name=Abigail Rose, age=80)),
+    Book(idbs=978-1-2345-6789-1, name=Beyond the Horizon, author=Author(id=null, name=Abigail Rose, age=80)),
+    Book(idbs=978-1-2345-6789-2, name=The Last Ember, author=Author(id=null, name=Abigail Rose, age=80))]
+and others were not expected:
+  [Book(idbs=978-1-2345-6789-0, name=The Shadow in the Attic, author=Author(id=1, name=Abigail Rose, age=80)),
+    Book(idbs=978-1-2345-6789-1, name=Beyond the Horizon, author=Author(id=2, name=Abigail Rose, age=80)),
+    Book(idbs=978-1-2345-6789-2, name=The Last Ember, author=Author(id=3, name=Abigail Rose, age=80))]
+
+	at com.example.postDatabase.perform.BookRepositoryIntegrationTests.testThatMultipleBooksCanBeCreatedAndRecalled(BookRepositoryIntegrationTests.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

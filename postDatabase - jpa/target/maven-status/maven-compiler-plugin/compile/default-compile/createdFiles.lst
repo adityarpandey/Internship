@@ -1,0 +1,7 @@
+com\example\postDatabase\Repositories\AuthorRepository.class
+com\example\postDatabase\Domain\Book.class
+com\example\postDatabase\Repositories\BookRepository.class
+com\example\postDatabase\Domain\Author$AuthorBuilder.class
+com\example\postDatabase\Domain\Author.class
+com\example\postDatabase\PostDatabaseApplication.class
+com\example\postDatabase\Domain\Book$BookBuilder.class

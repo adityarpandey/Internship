@@ -1,0 +1,4 @@
+com\example\postDatabase\PostDatabaseApplicationTests.class
+com\example\postDatabase\perform\BookRepositoryIntegrationTests.class
+com\example\postDatabase\perform\AuthorRepositoryIntegrationTest.class
+com\example\postDatabase\TestDataUtil.class
